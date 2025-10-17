@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Registration Form</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center; /* horizontal centering */
+      align-items: center;     /* vertical centering */
+      height: 100vh;           /* full viewport height */
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      width: auto;
+      margin-right: 5px;
+    }
+    input[type="submit"], input[type="reset"] {
+      width: 48%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="#" method="post">
+    <h2>Registration Form</h2>
+
+    Full Name: <input type="text" name="fullname" required>
+    Password: <input type="password" name="password" required>
+    Age: <input type="number" name="age" required>
+    Date of Birth: <input type="date" name="dob" required>
+
+    Gender:<br>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+    <br><br>
+
+    Hobbies:<br>
+    <input type="checkbox" name="hobby[]" value="Reading"> Reading
+    <input type="checkbox" name="hobby[]" value="Sports"> Sports
+    <input type="checkbox" name="hobby[]" value="Music"> Music
+    <br>
+
+    Course:
+    <select name="course">
+      <option value="B.Tech">B.Tech</option>
+      <option value="B.Sc">B.Sc</option>
+      <option value="B.Com">B.Com</option>
+      <option value="MBA">MBA</option>

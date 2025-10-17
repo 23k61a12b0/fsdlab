@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Three-Part Frame Layout</title>
+</head>
+<body>
+  <frameset cols="33%,33%,34%" frameborder="1" border="1">
+    <!-- First Frame: Image -->
+    <frame src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" name="imageFrame" noresize>
+
+    <!-- Second Frame: Paragraph -->
+    <frame src="frame2.html" name="textFrame" noresize>
+
+    <!-- Third Frame: Hyperlink -->
+    <frame src="frame3.html" name="linkFrame" noresize>
+  </frameset>
+
+  <!-- Fallback content for browsers that do not support frames -->
+  <noframes>
+    <p>Your browser does not support frames. Please update your browser.</p>
+  </noframes>
+</body>
+</html>
