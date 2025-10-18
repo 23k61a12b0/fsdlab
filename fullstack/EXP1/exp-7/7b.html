@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window Object Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f5f9;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #2563eb;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      background-color: #3b82f6;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Window Object Demo</h1>
+  <button onclick="showAlert()">Alert</button>
+  <button onclick="askName()">Prompt</button>
+  <button onclick="confirmAction()">Confirm</button>
+  <button onclick="openWindow()">Open Window</button>
+  <button onclick="closeWindow()">Close Window</button>
+
+  <p id="message"></p>
+
+  <script>
+    let newWin;
+
+    function showAlert() {
+      window.alert("This is an alert using the window object!");
+    }
+
+    function askName() {
+      let name = window.prompt("Enter your name:");
+      if (name) document.getElementById("message").innerHTML = "Hello, " + name + "!";
+    }
+
+    function confirmAction() {
+      let result = window.confirm("Do you want to continue?");
+      document.getElementById("message").innerHTML = result ? "You chose OK." : "You chose Cancel.";
+    }
+
+    function openWindow() {
+      newWin = window.open("", "newWindow", "width=400,height=300");
+      newWin.document.write("<h2>New Window Opened!</h2>");
+      setTimeout(() => newWin.document.body.style.backgroundColor = "#ffeb3b", 1000);
+    }
+
+    function closeWindow() {
+      if (newWin) newWin.close();
+    }
+  </script>
+
+</body>
+</html>
