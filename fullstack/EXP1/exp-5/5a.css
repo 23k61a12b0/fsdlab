@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.color-box {
+    padding: 20px;
+    margin: 12px 0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+/* Different colors using various CSS references */
+
+/* 1. Color Name */
+.color-name {
+    background-color: blue;
+}
+
+/* 2. Hexadecimal */
+.color-hex {
+    background-color: #28a745;
+}
+
+/* 3. RGB */
+.color-rgb {
+    background-color: rgb(255, 99, 71);
+}
+
+/* 4. RGBA */
+.color-rgba {
+    background-color: rgba(75, 0, 130, 0.7);
+    color: white;
+}
+
+/* 5. HSL */
+.color-hsl {
+    background-color: hsl(45, 100%, 50%);
+    color: black; /* for better contrast */
+}
+
+/* 6. HSLA */
+.color-hsla {
+    background-color: hsla(200, 100%, 40%, 0.6);
+    color: black; /* for better contrast */
+}
