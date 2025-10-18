@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal and External JS Example</title>
+
+  <script src="6a.js" defer></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 20px;
+      font-weight: bold;
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Embedding Internal and External JavaScript</h2>
+
+  <button id="btn1">Show Internal Message</button>
+  <button id="btn2">Show External Message</button>
+
+  <p id="output">Click a button to see the result!</p>
+
+  <script>
+    
+    function showInternal() {
+      document.getElementById("output").innerHTML =
+        "Hello from <b>Internal JavaScript</b>!";
+    }
+
+    
+    document.getElementById("btn1").addEventListener("click", showInternal);
+  </script>
+
+</body>
+</html>
