@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styles</title>
+
+    <!-- Internal CSS -->
+    <style>
+        .internal-class {
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        #internal-id {
+            border: 2px solid red;
+            padding: 5px;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="3c.css">
+</head>
+
+<body>
+
+    <!-- Inline CSS Example -->
+    <h1 style="color: orange; text-align: center;">
+        Inline CSS Example
+    </h1>
+
+    <p style="font-weight: bold; font-size: 20px;">
+        This paragraph demonstrates
+        <span style="color: blue;">inline CSS</span>,
+        where the style is applied directly in the HTML tag.
+        Inline styles override other CSS styles for this element.
+    </p>
+
+    <!-- Internal CSS Example -->
+    <div class="internal-class">
+        <p>
+            This paragraph is inside a div styled with
+            <strong>internal CSS</strong>.
+            Internal styles are defined within the
+            <code>&lt;style&gt;</code> tag in the HTML head and affect elements
+            with matching selectors.
+        </p>
+    </div>
+
+    <div id="internal-id">
+        <p>
+            This paragraph is inside a div with an ID selector using
+            <strong>internal CSS</strong>.
+            ID selectors apply styles to a unique element on the page.
+        </p>
+    </div>
+
+    <!-- External CSS Example -->
+    <h1>External CSS Example</h1>
+    <p>
+        This paragraph is styled using
+        <strong>external CSS</strong> stored in a separate file
+        (<code>style.css</code>).
+        External styles are reusable across multiple pages,
+        making it easier to maintain a consistent design.
+    </p>
+
+</body>
+</html>
