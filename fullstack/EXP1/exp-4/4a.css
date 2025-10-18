@@ -1,0 +1,102 @@
+/* ================================
+   i. SIMPLE SELECTORS
+=============================== */
+
+/* Element Selector */
+h1 {
+    color: darkblue;
+}
+
+/* ID Selector */
+#highlight {
+    background-color: yellow;
+}
+
+/* Class Selector */
+.intro {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Group Selector */
+h2, h3 {
+    color: teal;
+}
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================
+   ii. COMBINATOR SELECTORS
+=============================== */
+
+/* Descendant Selector */
+section p {
+    color: #333;
+}
+
+/* Child Selector */
+div > p {
+    color: green;
+}
+
+/* Adjacent Sibling Selector */
+h2 + p {
+    font-style: italic;
+}
+
+/* General Sibling Selector */
+h3 ~ p {
+    color: purple;
+}
+
+/* ================================
+   iii. PSEUDO-CLASS SELECTORS
+=============================== */
+
+/* Hover pseudo-class */
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* First-child pseudo-class */
+ul li:first-child {
+    font-weight: bold;
+}
+
+/* ================================
+   iv. PSEUDO-ELEMENT SELECTORS
+=============================== */
+
+/* Before pseudo-element */
+h1::before {
+    content: "★ ";
+    color: orange;
+}
+
+/* After pseudo-element */
+h1::after {
+    content: " ★";
+    color: orange;
+}
+
+/* ================================
+   v. ATTRIBUTE SELECTORS
+=============================== */
+
+/* Select input elements with type="text" */
+input[type="text"] {
+    border: 2px solid blue;
+    padding: 5px;
+}
+
+/* Select links with target="_blank" */
+a[target="_blank"] {
+    font-weight: bold;
+    color: darkgreen;
+}
